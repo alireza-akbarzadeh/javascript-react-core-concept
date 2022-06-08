@@ -21,7 +21,8 @@
     "simplebar": "^5.3.8",
     "simplebar-react": "^2.4.1",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wicg-inert": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,8 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "flow-bin": "^0.179.0"
   }
 }

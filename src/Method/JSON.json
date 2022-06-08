@@ -1,0 +1,20 @@
+{
+  "first_name": "Sammy",
+  "last_name": "Shark",
+  "online": true,
+  "username": "SammyShark",
+  "social_media": [
+    {
+      "description": "twitter",
+      "link": "https://twitter.com/digitalocean"
+    },
+    {
+      "description": "facebook",
+      "link": "https://www.facebook.com/DigitalOceanCloudHosting"
+    },
+    {
+      "description": "github",
+      "link": "https://github.com/digitalocean"
+    }
+  ]
+}

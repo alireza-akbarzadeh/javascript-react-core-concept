@@ -1,11 +1,40 @@
-import Social from "../trix/HOC/Social.jsx";
-import Portal from "../trix/Portal/Protal";
+import React from "react";
+import Modal from "../trix/Portal/Modal";
+import {} from "../Method/GeneratorFn";
 const Teams = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <Portal>
-      <div>Team</div>
-    </Portal>
+    <div className='App'>
+      <button
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      >
+        Open Modal
+      </button>
+      <Modal
+        onClose={() => {
+          setIsOpen(false);
+        }}
+        open={isOpen}
+      >
+        <p>I'm a modal window, I use portal so I only exist when I'm open.</p>
+        <p>
+          Also tabbing is locked inside me go ahead and try tabbing to the
+          button behind me.
+        </p>
+        <p style={{ textAlign: "center" }}>
+          <button
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
+            Close
+          </button>
+        </p>
+      </Modal>
+    </div>
   );
 };
 
-export default Social(Teams, "social", "social-list");
+export default Teams;
