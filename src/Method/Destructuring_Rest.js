@@ -148,3 +148,15 @@ const updatedUsedfss = { ...user, organization: { position: "Director" } };
 console.log(updatedUsedfss);
 
 // Rest Parameters
+
+function restTest(one, two, ...args) {
+  console.log(one);
+  console.log(two);
+  console.log(args);
+}
+
+restTest(1, 2, 3, 4, 5, 6);
+// Output
+// 1
+// 2
+// [3, 4, 5, 6]

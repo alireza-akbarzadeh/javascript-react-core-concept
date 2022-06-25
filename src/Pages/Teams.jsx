@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "../trix/Portal/Modal";
-import {} from "../Method/GeneratorFn";
+import Memo from "../trix/Memo/Memo";
 const Teams = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -12,6 +12,7 @@ const Teams = () => {
       >
         Open Modal
       </button>
+      <Memo />
       <Modal
         onClose={() => {
           setIsOpen(false);
